@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: shamar
+    runtime: docker
+    plan: free
+    healthCheckPath: /api/demo-accounts
+    envVars:
+      - key: SHAMAR_SECRET
+        generateValue: true
